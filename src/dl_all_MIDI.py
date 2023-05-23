@@ -48,7 +48,7 @@ def download_all():
 
     # loop through each url and download.
     for i, artist_i, artist_name, song_name, page_url, download_url, genre in tqdm(all_midi_urls_list, desc="Downloading all midi:"):
-        if i > 6543:  # start from here
+        if i > 8425:  # start from here
             DRIVER.get(page_url)
             time.sleep(1)
             button = DRIVER.find_element(
