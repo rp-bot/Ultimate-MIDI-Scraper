@@ -1,0 +1,8 @@
+# environments
+.vscode
+.env
+src/Chrome/preferences/
+
+# Cache
+__pycache__
+.DS_store
