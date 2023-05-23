@@ -1,0 +1,7 @@
+[38509:38509:0518/152257.157700:WARNING:chrome_main_delegate.cc(589)] This is Chrome version 113.0.5672.92 (not a warning)
+[38509:38509:0518/152257.224160:INFO:chrome_browser_cloud_management_controller.cc(167)] Starting CBCM Controller Initialization
+[38509:38509:0518/152257.224182:INFO:chrome_browser_cloud_management_controller.cc(195)] No machine level policy manager exists.
+[38509:38509:0518/152257.268651:WARNING:bluez_dbus_manager.cc(247)] Floss manager not present, cannot set Floss enable/disable.
+[38564:38564:0518/152257.304515:WARNING:sandbox_linux.cc(393)] InitializeSandbox() called with multiple threads in process gpu-process.
+[38509:38509:0518/152257.768700:WARNING:CONSOLE(0)] "Error with Permissions-Policy header: Unrecognized feature: 'ch-ua-form-factor'.", source:  (0)
+[38564:38564:0518/152301.325854:ERROR:gl_surface_presentation_helper.cc(260)] GetVSyncParametersIfAvailable() failed for 1 times!

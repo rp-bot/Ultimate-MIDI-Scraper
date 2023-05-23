@@ -1,0 +1,6 @@
+2023/05/23-00:21:55.350 bf93 Reusing MANIFEST /home/rpbot/Documents/GitHub/UltimateMIdiChordParser/./src/Chrome/preferences/Default/Local Storage/leveldb/MANIFEST-000001
+2023/05/23-00:21:55.350 bf93 Recovering log #18
+2023/05/23-00:21:55.350 bf93 Reusing old log /home/rpbot/Documents/GitHub/UltimateMIdiChordParser/./src/Chrome/preferences/Default/Local Storage/leveldb/000018.log 
+2023/05/23-00:28:55.573 bf95 Level-0 table #23: started
+2023/05/23-00:28:55.575 bf95 Level-0 table #23: 12796 bytes OK
+2023/05/23-00:28:55.576 bf95 Delete type=0 #18
