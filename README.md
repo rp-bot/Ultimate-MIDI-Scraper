@@ -10,7 +10,7 @@ This repo contains scripts to scrape specific websites, and MIDI files categoriz
 git submodule add https://github.com/rp-bot/Ultimate-MIDI-Scraper.git
 ```
 - Download only the Data:
-  - Download [`.zip`](https://github.com/rp-bot/Ultimate-MIDI-Scraper/releases/download/Releases/05-24-2023_midi_files.zip)
+  - Download [`.zip`](https://github.com/rp-bot/Ultimate-MIDI-Scraper/releases/download/Releases/05-24-2023_midi_files.zip) in the latest [Releases](https://github.com/rp-bot/Ultimate-MIDI-Scraper/releases/tag/Releases)
 - Clone repo:
 ```sh
 git clone https://github.com/rp-bot/Ultimate-MIDI-Scraper.git
