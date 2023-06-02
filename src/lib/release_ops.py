@@ -44,5 +44,5 @@ def rename_files_in_directory(directory_path):
 
 
 if __name__ == '__main__':
-    # rename_files_in_directory(os.path.join(MIDI_DATA_DIR, "country"))
+    # rename_files_in_directory(os.path.join(MIDI_DATA_DIR, "rnb_soul"))
     zipper(MIDI_DATA_DIR, RELEASES_DIR, f"{TODAY}_midi_files")
