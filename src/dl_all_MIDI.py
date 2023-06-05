@@ -59,7 +59,7 @@ def download_all():
 
 
 if __name__ == '__main__':
-    DRIVER = install_driver(headless=True, download_mode=True)
+    DRIVER = install_driver( download_mode=True)
 
     download_all()
 
