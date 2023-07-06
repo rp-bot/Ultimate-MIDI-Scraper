@@ -9,14 +9,14 @@ import os
 from tqdm import tqdm
 
 
-def file_organizer(artist_name: str, song_name: str, genre: str):
+def file_organizer(artist_name: str, song_name: str, genre: str, song_id: int):
 
     current_directory = os.getcwd()  # Get the current working directory
     # file_name = "example.mid"
     subdirectory = genre
 
     files = os.listdir(MIDI_DATA_DIR)
-    new_file_name = f"{artist_name}_{song_name}.mid"
+    new_file_name = f"{song_id}.mid"
 
 # Sort the files by modification time (most recent first)
     files.sort(key=lambda x: os.path.getmtime(
@@ -48,18 +48,19 @@ def download_all():
 
     # loop through each url and download.
     for i, artist_i, artist_name, song_name, page_url, download_url, genre in tqdm(all_midi_urls_list, desc="Downloading all midi:"):
-        if i > 13353:  # start from here   | 15265
-            DRIVER.get(page_url)
-            time.sleep(1)
-            button = DRIVER.find_element(
-                By.XPATH, '/html/body/div[2]/div[8]/div[1]/div/div[1]/div[3]/a[1]')
-            button.click()  # start download
-            time.sleep(1)
-            file_organizer(artist_name, song_name, genre)
+        if i > 15655:  # start from here   | 15655
+            DRIVER.get(download_url)
+
+            time.sleep(2)
+            # button = DRIVER.find_element(
+            #     By.XPATH, '/html/body/div[2]/div[8]/div[1]/div/div[1]/div[3]/a[1]')
+            # button.click()  # start download
+            # time.sleep(1)
+            file_organizer(artist_name, song_name, genre, i)
 
 
 if __name__ == '__main__':
-    DRIVER = install_driver( download_mode=True)
+    DRIVER = install_driver(headless=True, download_mode=True)
 
     download_all()
 
