@@ -32,10 +32,14 @@ def file_organizer(artist_name: str, song_name: str, genre: str, song_id: int):
     if not os.path.exists(subdirectory_path):
         os.makedirs(subdirectory_path)
 
-    shutil.move(source_path, destination_path)
-    new_destination_path = os.path.join(
-        MIDI_DATA_DIR, subdirectory, new_file_name)
-    os.rename(destination_path, new_destination_path)
+    if os.path.isfile(source_path):
+        shutil.move(source_path, destination_path)
+        new_destination_path = os.path.join(
+            MIDI_DATA_DIR, subdirectory, new_file_name)
+        os.rename(destination_path, new_destination_path)
+    else:
+        # raise ValueError(f"'{source_path}' is a directory.")
+        print(f"'{source_path}' is a directory.")
 
 
 def dir_cleanup():
